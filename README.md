@@ -32,6 +32,10 @@ retain primitive-choice weights for later parameter changes.
 
 The previous symbolic BDD exporter is preserved on `codex/symbolic-query-export`.
 
+See [the measured comparison](docs/tuple_export_comparison.md) and its
+[raw measurements](docs/tuple_export_comparison.json) for performance, PC sizes,
+resource limits, and the current symbolic BDD variable-ordering limitation.
+
 [build-badge]: https://github.com/camoy/roulette/actions/workflows/build.yml/badge.svg
 [build]: https://github.com/camoy/roulette/actions/workflows/build.yml?query=workflow%3Abuild
 [docs-badge]: https://img.shields.io/badge/Docs-Scribble-blue.svg

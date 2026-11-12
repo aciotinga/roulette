@@ -1,0 +1,3021 @@
+{
+  "started_utc": "2026-11-12T22:36:43.375822+00:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+  "cpu_count": 32,
+  "timeout_seconds": 20,
+  "memory_limit_mb": 1024,
+  "artifacts": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\roulette-comparison-dcgooyey",
+  "commits": {
+    "symbolic": "c432cc0b733d85b424049bee5a6e0bbf8ff53d02",
+    "tuple": "a89616e04404ff08a405f8433ce07cfedcc8b53e"
+  },
+  "results": [
+    {
+      "name": "airlift",
+      "family": "airlift",
+      "k": 2,
+      "primitives": 9,
+      "expected": [
+        0.5867750744064,
+        0.7221456,
+        0.5867750744064,
+        0.5867750744064
+      ],
+      "joint": [
+        0.2778544,
+        0.1353705255936,
+        0,
+        0.5867750744064
+      ],
+      "mode": "symbolic",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 2578.6228999495506,
+          "peak_mb": 252.61328125,
+          "allocated_bytes": 59485360,
+          "bdd_nodes": 13,
+          "bytes": 1467,
+          "cpu_ms": 46,
+          "export_ms": 56.2820999999999,
+          "gc_ms": 0,
+          "json_ms": 0.6257999999997992,
+          "outcomes": null,
+          "total_ms": 56.9078999999997
+        },
+        {
+          "status": "ok",
+          "wall_ms": 2576.2070999480784,
+          "peak_mb": 253.46875,
+          "allocated_bytes": 59591008,
+          "bdd_nodes": 13,
+          "bytes": 1467,
+          "cpu_ms": 46,
+          "export_ms": 54.637800000000425,
+          "gc_ms": 0,
+          "json_ms": 0.8557999999998174,
+          "outcomes": null,
+          "total_ms": 55.49360000000024
+        },
+        {
+          "status": "ok",
+          "wall_ms": 2683.8608998805285,
+          "peak_mb": 254.453125,
+          "allocated_bytes": 59635120,
+          "bdd_nodes": 13,
+          "bytes": 1467,
+          "cpu_ms": 62,
+          "export_ms": 57.86479999999983,
+          "gc_ms": 15,
+          "json_ms": 0.8528000000001157,
+          "outcomes": null,
+          "total_ms": 58.71759999999995
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 2578.6228999495506,
+        "peak_mb": 253.46875,
+        "allocated_bytes": 59591008,
+        "bdd_nodes": 13,
+        "bytes": 1467,
+        "cpu_ms": 46,
+        "export_ms": 56.2820999999999,
+        "gc_ms": 0,
+        "json_ms": 0.8528000000001157,
+        "outcomes": null,
+        "total_ms": 56.9078999999997
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2282.348500099033,
+        "peak_mb": 498.80859375,
+        "build_ms": 1.1297999881207943,
+        "compile_ms": 7.304700091481209,
+        "marginal_batch_ms": 21.26409998163581,
+        "pc_layers": 97,
+        "pc_variables": 11,
+        "pc_bytes": 119137,
+        "moments": [
+          0.5867750744064,
+          0.7221455999999998,
+          0.5867750744064,
+          0.5867750744064
+        ],
+        "total": 1.0,
+        "joint": [
+          0.27785440000000006,
+          0.13537052559359994,
+          0.0,
+          0.5867750744064
+        ]
+      }
+    },
+    {
+      "name": "airlift",
+      "family": "airlift",
+      "k": 2,
+      "primitives": 9,
+      "expected": [
+        0.5867750744064,
+        0.7221456,
+        0.5867750744064,
+        0.5867750744064
+      ],
+      "joint": [
+        0.2778544,
+        0.1353705255936,
+        0,
+        0.5867750744064
+      ],
+      "mode": "tuple",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 2713.8184001669288,
+          "peak_mb": 253.29296875,
+          "allocated_bytes": 59728432,
+          "bdd_nodes": null,
+          "bytes": 200,
+          "cpu_ms": 46,
+          "export_ms": 56.20179999999982,
+          "gc_ms": 0,
+          "json_ms": 0.5506999999997788,
+          "outcomes": 3,
+          "total_ms": 56.7524999999996
+        },
+        {
+          "status": "ok",
+          "wall_ms": 2650.3661000169814,
+          "peak_mb": 251.23828125,
+          "allocated_bytes": 59615904,
+          "bdd_nodes": null,
+          "bytes": 200,
+          "cpu_ms": 62,
+          "export_ms": 55.88760000000002,
+          "gc_ms": 15,
+          "json_ms": 0.7875000000003638,
+          "outcomes": 3,
+          "total_ms": 56.675100000000384
+        },
+        {
+          "status": "ok",
+          "wall_ms": 2603.2624999061227,
+          "peak_mb": 252.73046875,
+          "allocated_bytes": 59711520,
+          "bdd_nodes": null,
+          "bytes": 200,
+          "cpu_ms": 62,
+          "export_ms": 55.452600000000075,
+          "gc_ms": 15,
+          "json_ms": 0.8937000000000808,
+          "outcomes": 3,
+          "total_ms": 56.346300000000156
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 2650.3661000169814,
+        "peak_mb": 252.73046875,
+        "allocated_bytes": 59711520,
+        "bdd_nodes": null,
+        "bytes": 200,
+        "cpu_ms": 62,
+        "export_ms": 55.88760000000002,
+        "gc_ms": 15,
+        "json_ms": 0.7875000000003638,
+        "outcomes": 3,
+        "total_ms": 56.675100000000384
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 1995.3506998717785,
+        "peak_mb": 496.0625,
+        "build_ms": 0.28639985248446465,
+        "compile_ms": 1.7266999930143356,
+        "marginal_batch_ms": 2.388499677181244,
+        "pc_layers": 8,
+        "pc_variables": 2,
+        "pc_bytes": 15668,
+        "moments": [
+          0.5867750744064,
+          0.7221455999999999,
+          0.5867750744064,
+          0.5867750744064
+        ],
+        "total": 1.0,
+        "joint": [
+          0.27785440000000006,
+          0.13537052559359997,
+          0.0,
+          0.5867750744064
+        ]
+      }
+    },
+    {
+      "name": "independent_4",
+      "family": "independent",
+      "k": 4,
+      "primitives": 4,
+      "expected": [
+        0.2,
+        0.35,
+        0.06999999999999999,
+        0.02275
+      ],
+      "joint": [
+        0.091,
+        0.169,
+        0.091,
+        0.169,
+        0.048999999999999995,
+        0.091,
+        0.048999999999999995,
+        0.091,
+        0.02275,
+        0.04225,
+        0.02275,
+        0.04225,
+        0.012249999999999999,
+        0.02275,
+        0.012249999999999999,
+        0.02275
+      ],
+      "mode": "symbolic",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 2713.6487998068333,
+          "peak_mb": 252.515625,
+          "allocated_bytes": 32027520,
+          "bdd_nodes": 44,
+          "bytes": 3582,
+          "cpu_ms": 15,
+          "export_ms": 47.83770000000004,
+          "gc_ms": 0,
+          "json_ms": 0.6190999999998894,
+          "outcomes": null,
+          "total_ms": 48.45679999999993
+        },
+        {
+          "status": "ok",
+          "wall_ms": 2634.4035998918116,
+          "peak_mb": 251.44140625,
+          "allocated_bytes": 32001328,
+          "bdd_nodes": 44,
+          "bytes": 3582,
+          "cpu_ms": 31,
+          "export_ms": 33.78200000000015,
+          "gc_ms": 0,
+          "json_ms": 0.855199999999968,
+          "outcomes": null,
+          "total_ms": 34.63720000000012
+        },
+        {
+          "status": "ok",
+          "wall_ms": 2679.9784996546805,
+          "peak_mb": 254.34375,
+          "allocated_bytes": 32027712,
+          "bdd_nodes": 44,
+          "bytes": 3582,
+          "cpu_ms": 46,
+          "export_ms": 36.29899999999998,
+          "gc_ms": 15,
+          "json_ms": 0.8174000000003616,
+          "outcomes": null,
+          "total_ms": 37.11640000000034
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 2679.9784996546805,
+        "peak_mb": 252.515625,
+        "allocated_bytes": 32027520,
+        "bdd_nodes": 44,
+        "bytes": 3582,
+        "cpu_ms": 31,
+        "export_ms": 36.29899999999998,
+        "gc_ms": 0,
+        "json_ms": 0.8174000000003616,
+        "outcomes": null,
+        "total_ms": 37.11640000000034
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2259.7981998696923,
+        "peak_mb": 497.0546875,
+        "build_ms": 1.1450997553765774,
+        "compile_ms": 6.246000062674284,
+        "marginal_batch_ms": 15.684900339692831,
+        "pc_layers": 92,
+        "pc_variables": 8,
+        "pc_bytes": 93269,
+        "moments": [
+          0.19999999999999998,
+          0.35,
+          0.06999999999999998,
+          0.022749999999999992
+        ],
+        "total": 1.0,
+        "joint": [
+          0.09099999999999998,
+          0.16900000000000004,
+          0.09099999999999998,
+          0.16900000000000004,
+          0.04899999999999998,
+          0.09099999999999998,
+          0.04899999999999998,
+          0.09099999999999998,
+          0.022749999999999992,
+          0.04225,
+          0.022749999999999992,
+          0.04225,
+          0.012249999999999994,
+          0.022749999999999992,
+          0.012249999999999994,
+          0.022749999999999992
+        ]
+      }
+    },
+    {
+      "name": "independent_4",
+      "family": "independent",
+      "k": 4,
+      "primitives": 4,
+      "expected": [
+        0.2,
+        0.35,
+        0.06999999999999999,
+        0.02275
+      ],
+      "joint": [
+        0.091,
+        0.169,
+        0.091,
+        0.169,
+        0.048999999999999995,
+        0.091,
+        0.048999999999999995,
+        0.091,
+        0.02275,
+        0.04225,
+        0.02275,
+        0.04225,
+        0.012249999999999999,
+        0.02275,
+        0.012249999999999999,
+        0.02275
+      ],
+      "mode": "tuple",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 2707.895999774337,
+          "peak_mb": 253.13671875,
+          "allocated_bytes": 32209520,
+          "bdd_nodes": null,
+          "bytes": 1092,
+          "cpu_ms": 46,
+          "export_ms": 33.47489999999971,
+          "gc_ms": 15,
+          "json_ms": 0.5470000000000255,
+          "outcomes": 16,
+          "total_ms": 34.02189999999973
+        },
+        {
+          "status": "ok",
+          "wall_ms": 2638.382699806243,
+          "peak_mb": 253.12890625,
+          "allocated_bytes": 32212032,
+          "bdd_nodes": null,
+          "bytes": 1092,
+          "cpu_ms": 46,
+          "export_ms": 33.8421000000003,
+          "gc_ms": 15,
+          "json_ms": 0.7645999999999731,
+          "outcomes": 16,
+          "total_ms": 34.606700000000274
+        },
+        {
+          "status": "ok",
+          "wall_ms": 2686.6985000669956,
+          "peak_mb": 253.27734375,
+          "allocated_bytes": 32211376,
+          "bdd_nodes": null,
+          "bytes": 1092,
+          "cpu_ms": 31,
+          "export_ms": 33.608600000000024,
+          "gc_ms": 15,
+          "json_ms": 0.7786000000000968,
+          "outcomes": 16,
+          "total_ms": 34.38720000000012
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 2686.6985000669956,
+        "peak_mb": 253.13671875,
+        "allocated_bytes": 32211376,
+        "bdd_nodes": null,
+        "bytes": 1092,
+        "cpu_ms": 46,
+        "export_ms": 33.608600000000024,
+        "gc_ms": 15,
+        "json_ms": 0.7645999999999731,
+        "outcomes": 16,
+        "total_ms": 34.38720000000012
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 1995.8642004057765,
+        "peak_mb": 496.77734375,
+        "build_ms": 0.3690999001264572,
+        "compile_ms": 2.9437998309731483,
+        "marginal_batch_ms": 4.992700181901455,
+        "pc_layers": 25,
+        "pc_variables": 4,
+        "pc_bytes": 30046,
+        "moments": [
+          0.19999999999999998,
+          0.34999999999999987,
+          0.06999999999999998,
+          0.022749999999999996
+        ],
+        "total": 1.0,
+        "joint": [
+          0.09099999999999998,
+          0.169,
+          0.09099999999999998,
+          0.169,
+          0.04899999999999998,
+          0.09099999999999998,
+          0.04899999999999998,
+          0.09099999999999998,
+          0.022749999999999996,
+          0.04225,
+          0.022749999999999996,
+          0.04225,
+          0.012249999999999995,
+          0.022749999999999996,
+          0.012249999999999995,
+          0.022749999999999996
+        ]
+      }
+    },
+    {
+      "name": "independent_8",
+      "family": "independent",
+      "k": 8,
+      "primitives": 8,
+      "expected": [
+        0.2,
+        0.35,
+        0.06999999999999999,
+        0.0005175625
+      ],
+      "joint": null,
+      "mode": "symbolic",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 3080.735799856484,
+          "peak_mb": 252.94921875,
+          "allocated_bytes": 38537632,
+          "bdd_nodes": 764,
+          "bytes": 60368,
+          "cpu_ms": 62,
+          "export_ms": 73.22710000000006,
+          "gc_ms": 15,
+          "json_ms": 2.59479999999985,
+          "outcomes": null,
+          "total_ms": 75.82189999999991
+        },
+        {
+          "status": "ok",
+          "wall_ms": 3008.182100020349,
+          "peak_mb": 252.95703125,
+          "allocated_bytes": 38629584,
+          "bdd_nodes": 764,
+          "bytes": 60368,
+          "cpu_ms": 46,
+          "export_ms": 47.558100000000195,
+          "gc_ms": 31,
+          "json_ms": 2.5464999999999236,
+          "outcomes": null,
+          "total_ms": 50.10460000000012
+        },
+        {
+          "status": "ok",
+          "wall_ms": 3340.536199975759,
+          "peak_mb": 253.34765625,
+          "allocated_bytes": 38607472,
+          "bdd_nodes": 764,
+          "bytes": 60368,
+          "cpu_ms": 78,
+          "export_ms": 72.00109999999995,
+          "gc_ms": 0,
+          "json_ms": 3.723500000000058,
+          "outcomes": null,
+          "total_ms": 75.72460000000001
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 3080.735799856484,
+        "peak_mb": 252.95703125,
+        "allocated_bytes": 38607472,
+        "bdd_nodes": 764,
+        "bytes": 60368,
+        "cpu_ms": 62,
+        "export_ms": 72.00109999999995,
+        "gc_ms": 15,
+        "json_ms": 2.59479999999985,
+        "outcomes": null,
+        "total_ms": 75.72460000000001
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 3986.9529996067286,
+        "peak_mb": 511.859375,
+        "build_ms": 75.57850005105138,
+        "compile_ms": 70.01019967719913,
+        "marginal_batch_ms": 143.09180015698075,
+        "pc_layers": 1308,
+        "pc_variables": 16,
+        "pc_bytes": 952979,
+        "moments": [
+          0.19999999999999998,
+          0.35,
+          0.06999999999999998,
+          0.0005175624999999997
+        ],
+        "total": 1.0,
+        "joint": null
+      }
+    },
+    {
+      "name": "independent_8",
+      "family": "independent",
+      "k": 8,
+      "primitives": 8,
+      "expected": [
+        0.2,
+        0.35,
+        0.06999999999999999,
+        0.0005175625
+      ],
+      "joint": null,
+      "mode": "tuple",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 2964.250999968499,
+          "peak_mb": 251.19921875,
+          "allocated_bytes": 39398016,
+          "bdd_nodes": null,
+          "bytes": 23754,
+          "cpu_ms": 46,
+          "export_ms": 50.49529999999959,
+          "gc_ms": 15,
+          "json_ms": 1.4630999999999403,
+          "outcomes": 256,
+          "total_ms": 51.95839999999953
+        },
+        {
+          "status": "ok",
+          "wall_ms": 3319.3750996142626,
+          "peak_mb": 252.7578125,
+          "allocated_bytes": 39464752,
+          "bdd_nodes": null,
+          "bytes": 23754,
+          "cpu_ms": 78,
+          "export_ms": 89.41319999999996,
+          "gc_ms": 31,
+          "json_ms": 2.165399999999863,
+          "outcomes": 256,
+          "total_ms": 91.57859999999982
+        },
+        {
+          "status": "ok",
+          "wall_ms": 3575.947199948132,
+          "peak_mb": 253.3125,
+          "allocated_bytes": 39415168,
+          "bdd_nodes": null,
+          "bytes": 23754,
+          "cpu_ms": 46,
+          "export_ms": 75.6226999999999,
+          "gc_ms": 0,
+          "json_ms": 1.7308000000002721,
+          "outcomes": 256,
+          "total_ms": 77.35350000000017
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 3319.3750996142626,
+        "peak_mb": 252.7578125,
+        "allocated_bytes": 39415168,
+        "bdd_nodes": null,
+        "bytes": 23754,
+        "cpu_ms": 46,
+        "export_ms": 75.6226999999999,
+        "gc_ms": 15,
+        "json_ms": 1.7308000000002721,
+        "outcomes": 256,
+        "total_ms": 77.35350000000017
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2459.2159995809197,
+        "peak_mb": 498.01953125,
+        "build_ms": 2.1816003136336803,
+        "compile_ms": 19.560299813747406,
+        "marginal_batch_ms": 21.636399906128645,
+        "pc_layers": 273,
+        "pc_variables": 8,
+        "pc_bytes": 156150,
+        "moments": [
+          0.1999999999999999,
+          0.3499999999999996,
+          0.0699999999999999,
+          0.0005175624999999994
+        ],
+        "total": 1.0000000000000009,
+        "joint": null
+      }
+    },
+    {
+      "name": "independent_10",
+      "family": "independent",
+      "k": 10,
+      "primitives": 10,
+      "expected": [
+        0.2,
+        0.35,
+        0.06999999999999999,
+        3.6229375e-05
+      ],
+      "joint": null,
+      "mode": "symbolic",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 3061.324100010097,
+          "peak_mb": 254.05859375,
+          "allocated_bytes": 51677184,
+          "bdd_nodes": 3068,
+          "bytes": 246061,
+          "cpu_ms": 62,
+          "export_ms": 80.0331000000001,
+          "gc_ms": 0,
+          "json_ms": 17.36299999999983,
+          "outcomes": null,
+          "total_ms": 97.39609999999993
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 3061.324100010097,
+        "peak_mb": 254.05859375,
+        "allocated_bytes": 51677184,
+        "bdd_nodes": 3068,
+        "bytes": 246061,
+        "cpu_ms": 62,
+        "export_ms": 80.0331000000001,
+        "gc_ms": 0,
+        "json_ms": 17.36299999999983,
+        "outcomes": null,
+        "total_ms": 97.39609999999993
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 7501.459599938244,
+        "peak_mb": 556.34375,
+        "build_ms": 109.82300015166402,
+        "compile_ms": 314.95129968971014,
+        "marginal_batch_ms": 601.0299003683031,
+        "pc_layers": 5156,
+        "pc_variables": 20,
+        "pc_bytes": 3620637,
+        "moments": [
+          0.19999999999999998,
+          0.35,
+          0.06999999999999998,
+          3.6229374999999974e-05
+        ],
+        "total": 1.0,
+        "joint": null
+      }
+    },
+    {
+      "name": "independent_10",
+      "family": "independent",
+      "k": 10,
+      "primitives": 10,
+      "expected": [
+        0.2,
+        0.35,
+        0.06999999999999999,
+        3.6229375e-05
+      ],
+      "joint": null,
+      "mode": "tuple",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 3021.476300433278,
+          "peak_mb": 251.15234375,
+          "allocated_bytes": 55055552,
+          "bdd_nodes": null,
+          "bytes": 106450,
+          "cpu_ms": 62,
+          "export_ms": 64.20119999999997,
+          "gc_ms": 31,
+          "json_ms": 3.959600000000137,
+          "outcomes": 1024,
+          "total_ms": 68.16080000000011
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 3021.476300433278,
+        "peak_mb": 251.15234375,
+        "allocated_bytes": 55055552,
+        "bdd_nodes": null,
+        "bytes": 106450,
+        "cpu_ms": 62,
+        "export_ms": 64.20119999999997,
+        "gc_ms": 31,
+        "json_ms": 3.959600000000137,
+        "outcomes": 1024,
+        "total_ms": 68.16080000000011
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2861.339199822396,
+        "peak_mb": 505.66796875,
+        "build_ms": 9.426199831068516,
+        "compile_ms": 107.1178000420332,
+        "marginal_batch_ms": 60.25179987773299,
+        "pc_layers": 1045,
+        "pc_variables": 10,
+        "pc_bytes": 536103,
+        "moments": [
+          0.199999999999999,
+          0.3499999999999982,
+          0.06999999999999963,
+          3.622937499999981e-05
+        ],
+        "total": 0.9999999999999951,
+        "joint": null
+      }
+    },
+    {
+      "name": "independent_12",
+      "family": "independent",
+      "k": 12,
+      "primitives": 12,
+      "expected": [
+        0.2,
+        0.35,
+        0.06999999999999999,
+        1.1774546875000001e-05
+      ],
+      "joint": null,
+      "mode": "symbolic",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 3177.1292998455465,
+          "peak_mb": 266.21484375,
+          "allocated_bytes": 99873696,
+          "bdd_nodes": 12284,
+          "bytes": 994780,
+          "cpu_ms": 125,
+          "export_ms": 130.86130000000003,
+          "gc_ms": 31,
+          "json_ms": 36.729699999999866,
+          "outcomes": null,
+          "total_ms": 167.5909999999999
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 3177.1292998455465,
+        "peak_mb": 266.21484375,
+        "allocated_bytes": 99873696,
+        "bdd_nodes": 12284,
+        "bytes": 994780,
+        "cpu_ms": 125,
+        "export_ms": 130.86130000000003,
+        "gc_ms": 31,
+        "json_ms": 36.729699999999866,
+        "outcomes": null,
+        "total_ms": 167.5909999999999
+      },
+      "pc": {
+        "status": "timeout",
+        "wall_ms": 20080.756099894643,
+        "peak_mb": 731.49609375
+      }
+    },
+    {
+      "name": "independent_12",
+      "family": "independent",
+      "k": 12,
+      "primitives": 12,
+      "expected": [
+        0.2,
+        0.35,
+        0.06999999999999999,
+        1.1774546875000001e-05
+      ],
+      "joint": null,
+      "mode": "tuple",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 3097.7958999574184,
+          "peak_mb": 255.33984375,
+          "allocated_bytes": 115053024,
+          "bdd_nodes": null,
+          "bytes": 470420,
+          "cpu_ms": 140,
+          "export_ms": 129.1596999999997,
+          "gc_ms": 62,
+          "json_ms": 16.152599999999893,
+          "outcomes": 4096,
+          "total_ms": 145.3122999999996
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 3097.7958999574184,
+        "peak_mb": 255.33984375,
+        "allocated_bytes": 115053024,
+        "bdd_nodes": null,
+        "bytes": 470420,
+        "cpu_ms": 140,
+        "export_ms": 129.1596999999997,
+        "gc_ms": 62,
+        "json_ms": 16.152599999999893,
+        "outcomes": 4096,
+        "total_ms": 145.3122999999996
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 4487.976800184697,
+        "peak_mb": 530.328125,
+        "build_ms": 82.23760034888983,
+        "compile_ms": 327.7018996886909,
+        "marginal_batch_ms": 249.5206999592483,
+        "pc_layers": 4121,
+        "pc_variables": 12,
+        "pc_bytes": 2104223,
+        "moments": [
+          0.19999999999999618,
+          0.3499999999999936,
+          0.06999999999999876,
+          1.1774546874999783e-05
+        ],
+        "total": 0.9999999999999806,
+        "joint": null
+      }
+    },
+    {
+      "name": "independent_14",
+      "family": "independent",
+      "k": 14,
+      "primitives": 14,
+      "expected": [
+        0.2,
+        0.35,
+        0.06999999999999999,
+        8.242182812500001e-07
+      ],
+      "joint": null,
+      "mode": "symbolic",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 3369.1898002289236,
+          "peak_mb": 314.6640625,
+          "allocated_bytes": 288622080,
+          "bdd_nodes": 49148,
+          "bytes": 4027200,
+          "cpu_ms": 281,
+          "export_ms": 295.8892000000001,
+          "gc_ms": 93,
+          "json_ms": 159.62559999999985,
+          "outcomes": null,
+          "total_ms": 455.5147999999999
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 3369.1898002289236,
+        "peak_mb": 314.6640625,
+        "allocated_bytes": 288622080,
+        "bdd_nodes": 49148,
+        "bytes": 4027200,
+        "cpu_ms": 281,
+        "export_ms": 295.8892000000001,
+        "gc_ms": 93,
+        "json_ms": 159.62559999999985,
+        "outcomes": null,
+        "total_ms": 455.5147999999999
+      },
+      "pc": {
+        "status": "skipped_after_limit"
+      }
+    },
+    {
+      "name": "independent_14",
+      "family": "independent",
+      "k": 14,
+      "primitives": 14,
+      "expected": [
+        0.2,
+        0.35,
+        0.06999999999999999,
+        8.242182812500001e-07
+      ],
+      "joint": null,
+      "mode": "tuple",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 3471.5890996158123,
+          "peak_mb": 263.87109375,
+          "allocated_bytes": 351177408,
+          "bdd_nodes": null,
+          "bytes": 2057762,
+          "cpu_ms": 500,
+          "export_ms": 490.93849999999975,
+          "gc_ms": 93,
+          "json_ms": 71.35810000000038,
+          "outcomes": 16384,
+          "total_ms": 562.2966000000001
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 3471.5890996158123,
+        "peak_mb": 263.87109375,
+        "allocated_bytes": 351177408,
+        "bdd_nodes": null,
+        "bytes": 2057762,
+        "cpu_ms": 500,
+        "export_ms": 490.93849999999975,
+        "gc_ms": 93,
+        "json_ms": 71.35810000000038,
+        "outcomes": 16384,
+        "total_ms": 562.2966000000001
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 11853.16800000146,
+        "peak_mb": 627.0546875,
+        "build_ms": 230.68410018458962,
+        "compile_ms": 1890.7837998121977,
+        "marginal_batch_ms": 1015.009299851954,
+        "pc_layers": 16413,
+        "pc_variables": 14,
+        "pc_bytes": 8676951,
+        "moments": [
+          0.20000000000000873,
+          0.3500000000000154,
+          0.0700000000000029,
+          8.242182812500333e-07
+        ],
+        "total": 1.0000000000000449,
+        "joint": null
+      }
+    },
+    {
+      "name": "independent_16",
+      "family": "independent",
+      "k": 16,
+      "primitives": 16,
+      "expected": [
+        0.2,
+        0.35,
+        0.06999999999999999,
+        2.6787094140625e-07
+      ],
+      "joint": null,
+      "mode": "symbolic",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 4936.031499877572,
+          "peak_mb": 533.10546875,
+          "allocated_bytes": 1040314864,
+          "bdd_nodes": 196604,
+          "bytes": 16273824,
+          "cpu_ms": 1234,
+          "export_ms": 1281.8639000000003,
+          "gc_ms": 250,
+          "json_ms": 696.0088999999998,
+          "outcomes": null,
+          "total_ms": 1977.8728
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 4936.031499877572,
+        "peak_mb": 533.10546875,
+        "allocated_bytes": 1040314864,
+        "bdd_nodes": 196604,
+        "bytes": 16273824,
+        "cpu_ms": 1234,
+        "export_ms": 1281.8639000000003,
+        "gc_ms": 250,
+        "json_ms": 696.0088999999998,
+        "outcomes": null,
+        "total_ms": 1977.8728
+      },
+      "pc": {
+        "status": "skipped_after_limit"
+      }
+    },
+    {
+      "name": "independent_16",
+      "family": "independent",
+      "k": 16,
+      "primitives": 16,
+      "expected": [
+        0.2,
+        0.35,
+        0.06999999999999999,
+        2.6787094140625e-07
+      ],
+      "joint": null,
+      "mode": "tuple",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 5650.93050012365,
+          "peak_mb": 372.5390625,
+          "allocated_bytes": 1325627296,
+          "bdd_nodes": null,
+          "bytes": 8933312,
+          "cpu_ms": 2343,
+          "export_ms": 2410.5065,
+          "gc_ms": 781,
+          "json_ms": 330.1868999999997,
+          "outcomes": 65536,
+          "total_ms": 2740.6933999999997
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 5650.93050012365,
+        "peak_mb": 372.5390625,
+        "allocated_bytes": 1325627296,
+        "bdd_nodes": null,
+        "bytes": 8933312,
+        "cpu_ms": 2343,
+        "export_ms": 2410.5065,
+        "gc_ms": 781,
+        "json_ms": 330.1868999999997,
+        "outcomes": 65536,
+        "total_ms": 2740.6933999999997
+      },
+      "pc": {
+        "status": "timeout",
+        "wall_ms": 20102.106499951333,
+        "peak_mb": 888.640625
+      }
+    },
+    {
+      "name": "shared_4",
+      "family": "shared",
+      "k": 4,
+      "primitives": 4,
+      "expected": [
+        0.2,
+        0.3499999999999999,
+        0.06999999999999999,
+        0.02275
+      ],
+      "joint": [
+        0.091,
+        0.169,
+        0.091,
+        0.169,
+        0.048999999999999995,
+        0.091,
+        0.048999999999999995,
+        0.091,
+        0.02275,
+        0.04225,
+        0.02275,
+        0.04225,
+        0.012249999999999999,
+        0.02275,
+        0.012249999999999999,
+        0.02275
+      ],
+      "mode": "symbolic",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 3024.678099900484,
+          "peak_mb": 252.40234375,
+          "allocated_bytes": 32094064,
+          "bdd_nodes": 44,
+          "bytes": 3582,
+          "cpu_ms": 46,
+          "export_ms": 53.97440000000006,
+          "gc_ms": 0,
+          "json_ms": 0.6929000000000087,
+          "outcomes": null,
+          "total_ms": 54.66730000000007
+        },
+        {
+          "status": "ok",
+          "wall_ms": 2986.8167000822723,
+          "peak_mb": 254.5,
+          "allocated_bytes": 31998448,
+          "bdd_nodes": 44,
+          "bytes": 3582,
+          "cpu_ms": 46,
+          "export_ms": 40.178499999999985,
+          "gc_ms": 15,
+          "json_ms": 0.9996000000001004,
+          "outcomes": null,
+          "total_ms": 41.178100000000086
+        },
+        {
+          "status": "ok",
+          "wall_ms": 2914.222899824381,
+          "peak_mb": 254.49609375,
+          "allocated_bytes": 31997552,
+          "bdd_nodes": 44,
+          "bytes": 3582,
+          "cpu_ms": 46,
+          "export_ms": 37.90339999999969,
+          "gc_ms": 15,
+          "json_ms": 0.8640000000004875,
+          "outcomes": null,
+          "total_ms": 38.76740000000018
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 2986.8167000822723,
+        "peak_mb": 254.49609375,
+        "allocated_bytes": 31998448,
+        "bdd_nodes": 44,
+        "bytes": 3582,
+        "cpu_ms": 46,
+        "export_ms": 40.178499999999985,
+        "gc_ms": 15,
+        "json_ms": 0.8640000000004875,
+        "outcomes": null,
+        "total_ms": 41.178100000000086
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2398.658699821681,
+        "peak_mb": 497.31640625,
+        "build_ms": 1.2523001059889793,
+        "compile_ms": 6.4917998388409615,
+        "marginal_batch_ms": 18.23010016232729,
+        "pc_layers": 92,
+        "pc_variables": 8,
+        "pc_bytes": 92765,
+        "moments": [
+          0.19999999999999998,
+          0.35,
+          0.06999999999999998,
+          0.022749999999999992
+        ],
+        "total": 1.0,
+        "joint": [
+          0.09099999999999998,
+          0.16900000000000004,
+          0.09099999999999998,
+          0.16900000000000004,
+          0.04899999999999998,
+          0.09099999999999998,
+          0.04899999999999998,
+          0.09099999999999998,
+          0.022749999999999992,
+          0.04225,
+          0.022749999999999992,
+          0.04225,
+          0.012249999999999994,
+          0.022749999999999992,
+          0.012249999999999994,
+          0.022749999999999992
+        ]
+      }
+    },
+    {
+      "name": "shared_4",
+      "family": "shared",
+      "k": 4,
+      "primitives": 4,
+      "expected": [
+        0.2,
+        0.3499999999999999,
+        0.06999999999999999,
+        0.02275
+      ],
+      "joint": [
+        0.091,
+        0.169,
+        0.091,
+        0.169,
+        0.048999999999999995,
+        0.091,
+        0.048999999999999995,
+        0.091,
+        0.02275,
+        0.04225,
+        0.02275,
+        0.04225,
+        0.012249999999999999,
+        0.02275,
+        0.012249999999999999,
+        0.02275
+      ],
+      "mode": "tuple",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 2937.3967996798456,
+          "peak_mb": 253.35546875,
+          "allocated_bytes": 32277216,
+          "bdd_nodes": null,
+          "bytes": 1092,
+          "cpu_ms": 46,
+          "export_ms": 36.93100000000004,
+          "gc_ms": 0,
+          "json_ms": 0.6781999999998334,
+          "outcomes": 16,
+          "total_ms": 37.60919999999987
+        },
+        {
+          "status": "ok",
+          "wall_ms": 2932.3249999433756,
+          "peak_mb": 251.18359375,
+          "allocated_bytes": 32220480,
+          "bdd_nodes": null,
+          "bytes": 1092,
+          "cpu_ms": 31,
+          "export_ms": 36.0971999999997,
+          "gc_ms": 15,
+          "json_ms": 0.7567000000003645,
+          "outcomes": 16,
+          "total_ms": 36.85390000000007
+        },
+        {
+          "status": "ok",
+          "wall_ms": 2934.669299982488,
+          "peak_mb": 253.24609375,
+          "allocated_bytes": 32233632,
+          "bdd_nodes": null,
+          "bytes": 1092,
+          "cpu_ms": 31,
+          "export_ms": 36.48559999999998,
+          "gc_ms": 15,
+          "json_ms": 0.8553000000001703,
+          "outcomes": 16,
+          "total_ms": 37.34090000000015
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 2934.669299982488,
+        "peak_mb": 253.24609375,
+        "allocated_bytes": 32233632,
+        "bdd_nodes": null,
+        "bytes": 1092,
+        "cpu_ms": 31,
+        "export_ms": 36.48559999999998,
+        "gc_ms": 15,
+        "json_ms": 0.7567000000003645,
+        "outcomes": 16,
+        "total_ms": 37.34090000000015
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2300.700300373137,
+        "peak_mb": 496.37890625,
+        "build_ms": 0.43349992483854294,
+        "compile_ms": 2.826400101184845,
+        "marginal_batch_ms": 6.016300059854984,
+        "pc_layers": 25,
+        "pc_variables": 4,
+        "pc_bytes": 29881,
+        "moments": [
+          0.19999999999999998,
+          0.34999999999999987,
+          0.06999999999999998,
+          0.022749999999999996
+        ],
+        "total": 1.0,
+        "joint": [
+          0.09099999999999998,
+          0.169,
+          0.09099999999999998,
+          0.169,
+          0.04899999999999998,
+          0.09099999999999998,
+          0.04899999999999998,
+          0.09099999999999998,
+          0.022749999999999996,
+          0.04225,
+          0.022749999999999996,
+          0.04225,
+          0.012249999999999995,
+          0.022749999999999996,
+          0.012249999999999995,
+          0.022749999999999996
+        ]
+      }
+    },
+    {
+      "name": "shared_8",
+      "family": "shared",
+      "k": 8,
+      "primitives": 4,
+      "expected": [
+        0.2,
+        0.3499999999999999,
+        0.06999999999999999,
+        0.02275
+      ],
+      "joint": null,
+      "mode": "symbolic",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 2998.2269001193345,
+          "peak_mb": 252.4453125,
+          "allocated_bytes": 33901104,
+          "bdd_nodes": 91,
+          "bytes": 6859,
+          "cpu_ms": 46,
+          "export_ms": 58.73349999999982,
+          "gc_ms": 15,
+          "json_ms": 0.7934000000000196,
+          "outcomes": null,
+          "total_ms": 59.52689999999984
+        },
+        {
+          "status": "ok",
+          "wall_ms": 2960.0358000025153,
+          "peak_mb": 252.4765625,
+          "allocated_bytes": 33899856,
+          "bdd_nodes": 91,
+          "bytes": 6859,
+          "cpu_ms": 46,
+          "export_ms": 43.484899999999925,
+          "gc_ms": 15,
+          "json_ms": 0.9601999999999862,
+          "outcomes": null,
+          "total_ms": 44.44509999999991
+        },
+        {
+          "status": "ok",
+          "wall_ms": 2935.109700076282,
+          "peak_mb": 254.625,
+          "allocated_bytes": 33791616,
+          "bdd_nodes": 91,
+          "bytes": 6859,
+          "cpu_ms": 46,
+          "export_ms": 42.50779999999986,
+          "gc_ms": 0,
+          "json_ms": 0.9002999999997883,
+          "outcomes": null,
+          "total_ms": 43.40809999999965
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 2960.0358000025153,
+        "peak_mb": 252.4765625,
+        "allocated_bytes": 33899856,
+        "bdd_nodes": 91,
+        "bytes": 6859,
+        "cpu_ms": 46,
+        "export_ms": 43.484899999999925,
+        "gc_ms": 15,
+        "json_ms": 0.9002999999997883,
+        "outcomes": null,
+        "total_ms": 44.44509999999991
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2452.032099943608,
+        "peak_mb": 498.09765625,
+        "build_ms": 1.8239999189972878,
+        "compile_ms": 9.501900058239698,
+        "marginal_batch_ms": 25.02369973808527,
+        "pc_layers": 147,
+        "pc_variables": 12,
+        "pc_bytes": 126987,
+        "moments": [
+          0.19999999999999998,
+          0.35,
+          0.06999999999999998,
+          0.022749999999999992
+        ],
+        "total": 1.0,
+        "joint": null
+      }
+    },
+    {
+      "name": "shared_8",
+      "family": "shared",
+      "k": 8,
+      "primitives": 4,
+      "expected": [
+        0.2,
+        0.3499999999999999,
+        0.06999999999999999,
+        0.02275
+      ],
+      "joint": null,
+      "mode": "tuple",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 3147.753900382668,
+          "peak_mb": 253.26953125,
+          "allocated_bytes": 36481760,
+          "bdd_nodes": null,
+          "bytes": 1414,
+          "cpu_ms": 62,
+          "export_ms": 67.98979999999983,
+          "gc_ms": 46,
+          "json_ms": 11.039099999999962,
+          "outcomes": 16,
+          "total_ms": 79.0288999999998
+        },
+        {
+          "status": "ok",
+          "wall_ms": 3217.940100003034,
+          "peak_mb": 285.93359375,
+          "allocated_bytes": 36396960,
+          "bdd_nodes": null,
+          "bytes": 1414,
+          "cpu_ms": 78,
+          "export_ms": 75.79760000000033,
+          "gc_ms": 46,
+          "json_ms": 0.9467999999997119,
+          "outcomes": 16,
+          "total_ms": 76.74440000000004
+        },
+        {
+          "status": "ok",
+          "wall_ms": 4606.8889000453055,
+          "peak_mb": 257.14453125,
+          "allocated_bytes": 36415888,
+          "bdd_nodes": null,
+          "bytes": 1414,
+          "cpu_ms": 140,
+          "export_ms": 142.36340000000018,
+          "gc_ms": 46,
+          "json_ms": 1.6583000000000538,
+          "outcomes": 16,
+          "total_ms": 144.02170000000024
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 3217.940100003034,
+        "peak_mb": 257.14453125,
+        "allocated_bytes": 36415888,
+        "bdd_nodes": null,
+        "bytes": 1414,
+        "cpu_ms": 78,
+        "export_ms": 75.79760000000033,
+        "gc_ms": 46,
+        "json_ms": 1.6583000000000538,
+        "outcomes": 16,
+        "total_ms": 79.0288999999998
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 3120.228399988264,
+        "peak_mb": 496.01953125,
+        "build_ms": 0.7036002352833748,
+        "compile_ms": 4.374200012534857,
+        "marginal_batch_ms": 11.315500363707542,
+        "pc_layers": 33,
+        "pc_variables": 8,
+        "pc_bytes": 48409,
+        "moments": [
+          0.2,
+          0.35,
+          0.06999999999999999,
+          0.02275
+        ],
+        "total": 1.0000000000000002,
+        "joint": null
+      }
+    },
+    {
+      "name": "shared_12",
+      "family": "shared",
+      "k": 12,
+      "primitives": 4,
+      "expected": [
+        0.2,
+        0.3499999999999999,
+        0.06999999999999999,
+        0.02275
+      ],
+      "joint": null,
+      "mode": "symbolic",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 3515.3212998993695,
+          "peak_mb": 252.83203125,
+          "allocated_bytes": 35814720,
+          "bdd_nodes": 150,
+          "bytes": 11042,
+          "cpu_ms": 78,
+          "export_ms": 92.06700000000001,
+          "gc_ms": 46,
+          "json_ms": 1.831300000000283,
+          "outcomes": null,
+          "total_ms": 93.89830000000029
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 3515.3212998993695,
+        "peak_mb": 252.83203125,
+        "allocated_bytes": 35814720,
+        "bdd_nodes": 150,
+        "bytes": 11042,
+        "cpu_ms": 78,
+        "export_ms": 92.06700000000001,
+        "gc_ms": 46,
+        "json_ms": 1.831300000000283,
+        "outcomes": null,
+        "total_ms": 93.89830000000029
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2270.472100004554,
+        "peak_mb": 498.9453125,
+        "build_ms": 2.6999996043741703,
+        "compile_ms": 12.731200084090233,
+        "marginal_batch_ms": 29.74389959126711,
+        "pc_layers": 214,
+        "pc_variables": 16,
+        "pc_bytes": 165523,
+        "moments": [
+          0.19999999999999998,
+          0.35,
+          0.06999999999999998,
+          0.022749999999999992
+        ],
+        "total": 1.0,
+        "joint": null
+      }
+    },
+    {
+      "name": "shared_12",
+      "family": "shared",
+      "k": 12,
+      "primitives": 4,
+      "expected": [
+        0.2,
+        0.3499999999999999,
+        0.06999999999999999,
+        0.02275
+      ],
+      "joint": null,
+      "mode": "tuple",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 2819.676499813795,
+          "peak_mb": 253.41796875,
+          "allocated_bytes": 81226112,
+          "bdd_nodes": null,
+          "bytes": 1776,
+          "cpu_ms": 93,
+          "export_ms": 84.52700000000004,
+          "gc_ms": 0,
+          "json_ms": 0.5751000000000204,
+          "outcomes": 16,
+          "total_ms": 85.10210000000006
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 2819.676499813795,
+        "peak_mb": 253.41796875,
+        "allocated_bytes": 81226112,
+        "bdd_nodes": null,
+        "bytes": 1776,
+        "cpu_ms": 93,
+        "export_ms": 84.52700000000004,
+        "gc_ms": 0,
+        "json_ms": 0.5751000000000204,
+        "outcomes": 16,
+        "total_ms": 85.10210000000006
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2145.4260000027716,
+        "peak_mb": 497.74609375,
+        "build_ms": 0.5751000717282295,
+        "compile_ms": 4.775399807840586,
+        "marginal_batch_ms": 13.39019974693656,
+        "pc_layers": 41,
+        "pc_variables": 12,
+        "pc_bytes": 67018,
+        "moments": [
+          0.2,
+          0.35,
+          0.07,
+          0.02275
+        ],
+        "total": 1.0000000000000002,
+        "joint": null
+      }
+    },
+    {
+      "name": "shared_16",
+      "family": "shared",
+      "k": 16,
+      "primitives": 4,
+      "expected": [
+        0.2,
+        0.3499999999999999,
+        0.06999999999999999,
+        0.02275
+      ],
+      "joint": null,
+      "mode": "symbolic",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 2757.847699802369,
+          "peak_mb": 252.71875,
+          "allocated_bytes": 37861904,
+          "bdd_nodes": 212,
+          "bytes": 15459,
+          "cpu_ms": 46,
+          "export_ms": 67.02030000000013,
+          "gc_ms": 31,
+          "json_ms": 1.2941000000000713,
+          "outcomes": null,
+          "total_ms": 68.3144000000002
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 2757.847699802369,
+        "peak_mb": 252.71875,
+        "allocated_bytes": 37861904,
+        "bdd_nodes": 212,
+        "bytes": 15459,
+        "cpu_ms": 46,
+        "export_ms": 67.02030000000013,
+        "gc_ms": 31,
+        "json_ms": 1.2941000000000713,
+        "outcomes": null,
+        "total_ms": 68.3144000000002
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2322.35539983958,
+        "peak_mb": 499.3515625,
+        "build_ms": 3.0465000309050083,
+        "compile_ms": 46.33969999849796,
+        "marginal_batch_ms": 34.98620027676225,
+        "pc_layers": 284,
+        "pc_variables": 20,
+        "pc_bytes": 205035,
+        "moments": [
+          0.19999999999999998,
+          0.35,
+          0.06999999999999998,
+          0.022749999999999992
+        ],
+        "total": 1.0,
+        "joint": null
+      }
+    },
+    {
+      "name": "shared_16",
+      "family": "shared",
+      "k": 16,
+      "primitives": 4,
+      "expected": [
+        0.2,
+        0.3499999999999999,
+        0.06999999999999999,
+        0.02275
+      ],
+      "joint": null,
+      "mode": "tuple",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 4292.515499982983,
+          "peak_mb": 295.65625,
+          "allocated_bytes": 792476304,
+          "bdd_nodes": null,
+          "bytes": 2178,
+          "cpu_ms": 1546,
+          "export_ms": 1553.9689999999996,
+          "gc_ms": 421,
+          "json_ms": 0.9244000000007873,
+          "outcomes": 16,
+          "total_ms": 1554.8934000000004
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 4292.515499982983,
+        "peak_mb": 295.65625,
+        "allocated_bytes": 792476304,
+        "bdd_nodes": null,
+        "bytes": 2178,
+        "cpu_ms": 1546,
+        "export_ms": 1553.9689999999996,
+        "gc_ms": 421,
+        "json_ms": 0.9244000000007873,
+        "outcomes": 16,
+        "total_ms": 1554.8934000000004
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2176.5359002165496,
+        "peak_mb": 497.3046875,
+        "build_ms": 0.8093998767435551,
+        "compile_ms": 6.343299988657236,
+        "marginal_batch_ms": 16.48669969290495,
+        "pc_layers": 49,
+        "pc_variables": 16,
+        "pc_bytes": 85570,
+        "moments": [
+          0.19999999999999998,
+          0.34999999999999987,
+          0.06999999999999998,
+          0.022749999999999996
+        ],
+        "total": 1.0,
+        "joint": null
+      }
+    },
+    {
+      "name": "shared_20",
+      "family": "shared",
+      "k": 20,
+      "primitives": 4,
+      "expected": [
+        0.2,
+        0.3499999999999999,
+        0.06999999999999999,
+        0.0
+      ],
+      "joint": null,
+      "mode": "symbolic",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 2739.475999958813,
+          "peak_mb": 253.2265625,
+          "allocated_bytes": 39129632,
+          "bdd_nodes": 300,
+          "bytes": 21687,
+          "cpu_ms": 46,
+          "export_ms": 58.75999999999976,
+          "gc_ms": 0,
+          "json_ms": 1.979500000000371,
+          "outcomes": null,
+          "total_ms": 60.739500000000135
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 2739.475999958813,
+        "peak_mb": 253.2265625,
+        "allocated_bytes": 39129632,
+        "bdd_nodes": 300,
+        "bytes": 21687,
+        "cpu_ms": 46,
+        "export_ms": 58.75999999999976,
+        "gc_ms": 0,
+        "json_ms": 1.979500000000371,
+        "outcomes": null,
+        "total_ms": 60.739500000000135
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2376.219699624926,
+        "peak_mb": 500.49609375,
+        "build_ms": 4.062599968165159,
+        "compile_ms": 50.20209960639477,
+        "marginal_batch_ms": 42.12469980120659,
+        "pc_layers": 380,
+        "pc_variables": 24,
+        "pc_bytes": 253635,
+        "moments": [
+          0.19999999999999998,
+          0.35,
+          0.06999999999999998,
+          0.0
+        ],
+        "total": 1.0,
+        "joint": null
+      }
+    },
+    {
+      "name": "shared_20",
+      "family": "shared",
+      "k": 20,
+      "primitives": 4,
+      "expected": [
+        0.2,
+        0.3499999999999999,
+        0.06999999999999999,
+        0.0
+      ],
+      "joint": null,
+      "mode": "tuple",
+      "export_trials": [
+        {
+          "status": "timeout",
+          "wall_ms": 20059.36690000817,
+          "peak_mb": 631.77734375
+        }
+      ],
+      "export": {
+        "status": "timeout",
+        "wall_ms": 20059.36690000817,
+        "peak_mb": 631.77734375
+      },
+      "pc": {
+        "status": "skipped_after_limit"
+      }
+    },
+    {
+      "name": "repeated_4",
+      "family": "repeated",
+      "k": 4,
+      "primitives": 1,
+      "expected": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "joint": [
+        0.75,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.25
+      ],
+      "mode": "symbolic",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 3580.428599845618,
+          "peak_mb": 254.4609375,
+          "allocated_bytes": 30135776,
+          "bdd_nodes": 8,
+          "bytes": 711,
+          "cpu_ms": 62,
+          "export_ms": 82.37339999999995,
+          "gc_ms": 0,
+          "json_ms": 0.5841999999997824,
+          "outcomes": null,
+          "total_ms": 82.95759999999973
+        },
+        {
+          "status": "ok",
+          "wall_ms": 3445.8739003166556,
+          "peak_mb": 252.30078125,
+          "allocated_bytes": 30142480,
+          "bdd_nodes": 8,
+          "bytes": 711,
+          "cpu_ms": 62,
+          "export_ms": 69.45550000000003,
+          "gc_ms": 15,
+          "json_ms": 0.9886000000001332,
+          "outcomes": null,
+          "total_ms": 70.44410000000016
+        },
+        {
+          "status": "ok",
+          "wall_ms": 3757.093599997461,
+          "peak_mb": 252.25390625,
+          "allocated_bytes": 30136400,
+          "bdd_nodes": 8,
+          "bytes": 711,
+          "cpu_ms": 62,
+          "export_ms": 65.25080000000025,
+          "gc_ms": 15,
+          "json_ms": 2.0102999999999156,
+          "outcomes": null,
+          "total_ms": 67.26110000000017
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 3580.428599845618,
+        "peak_mb": 252.30078125,
+        "allocated_bytes": 30136400,
+        "bdd_nodes": 8,
+        "bytes": 711,
+        "cpu_ms": 62,
+        "export_ms": 69.45550000000003,
+        "gc_ms": 15,
+        "json_ms": 0.9886000000001332,
+        "outcomes": null,
+        "total_ms": 70.44410000000016
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2666.99399985373,
+        "peak_mb": 496.40234375,
+        "build_ms": 0.6413999944925308,
+        "compile_ms": 3.039299976080656,
+        "marginal_batch_ms": 8.449300192296505,
+        "pc_layers": 22,
+        "pc_variables": 5,
+        "pc_bytes": 33903,
+        "moments": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "total": 1.0,
+        "joint": [
+          0.75,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.25
+        ]
+      }
+    },
+    {
+      "name": "repeated_4",
+      "family": "repeated",
+      "k": 4,
+      "primitives": 1,
+      "expected": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "joint": [
+        0.75,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.25
+      ],
+      "mode": "tuple",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 3412.5654003582895,
+          "peak_mb": 253.19140625,
+          "allocated_bytes": 30322928,
+          "bdd_nodes": null,
+          "bytes": 142,
+          "cpu_ms": 46,
+          "export_ms": 63.339100000000144,
+          "gc_ms": 0,
+          "json_ms": 0.7757999999998901,
+          "outcomes": 2,
+          "total_ms": 64.11490000000003
+        },
+        {
+          "status": "ok",
+          "wall_ms": 3187.2297995723784,
+          "peak_mb": 253.375,
+          "allocated_bytes": 30258048,
+          "bdd_nodes": null,
+          "bytes": 142,
+          "cpu_ms": 46,
+          "export_ms": 38.47519999999986,
+          "gc_ms": 0,
+          "json_ms": 0.8113000000003012,
+          "outcomes": 2,
+          "total_ms": 39.28650000000016
+        },
+        {
+          "status": "ok",
+          "wall_ms": 3467.874400317669,
+          "peak_mb": 251.2734375,
+          "allocated_bytes": 30324016,
+          "bdd_nodes": null,
+          "bytes": 142,
+          "cpu_ms": 78,
+          "export_ms": 63.208700000000135,
+          "gc_ms": 0,
+          "json_ms": 0.9983999999999469,
+          "outcomes": 2,
+          "total_ms": 64.20710000000008
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 3412.5654003582895,
+        "peak_mb": 253.19140625,
+        "allocated_bytes": 30322928,
+        "bdd_nodes": null,
+        "bytes": 142,
+        "cpu_ms": 46,
+        "export_ms": 63.208700000000135,
+        "gc_ms": 0,
+        "json_ms": 0.8113000000003012,
+        "outcomes": 2,
+        "total_ms": 64.11490000000003
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2691.3135000504553,
+        "peak_mb": 496.59375,
+        "build_ms": 0.4575997591018677,
+        "compile_ms": 2.207700163125992,
+        "marginal_batch_ms": 4.8766001127660275,
+        "pc_layers": 11,
+        "pc_variables": 4,
+        "pc_bytes": 24315,
+        "moments": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "total": 1.0,
+        "joint": [
+          0.75,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.25
+        ]
+      }
+    },
+    {
+      "name": "repeated_8",
+      "family": "repeated",
+      "k": 8,
+      "primitives": 1,
+      "expected": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "joint": null,
+      "mode": "symbolic",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 2892.8320999257267,
+          "peak_mb": 251.19140625,
+          "allocated_bytes": 30695792,
+          "bdd_nodes": 16,
+          "bytes": 1325,
+          "cpu_ms": 31,
+          "export_ms": 51.29340000000002,
+          "gc_ms": 15,
+          "json_ms": 0.6792999999997846,
+          "outcomes": null,
+          "total_ms": 51.972699999999804
+        },
+        {
+          "status": "ok",
+          "wall_ms": 2801.5777999535203,
+          "peak_mb": 251.234375,
+          "allocated_bytes": 30761552,
+          "bdd_nodes": 16,
+          "bytes": 1325,
+          "cpu_ms": 31,
+          "export_ms": 33.4404999999997,
+          "gc_ms": 15,
+          "json_ms": 0.8393999999998414,
+          "outcomes": null,
+          "total_ms": 34.27989999999954
+        },
+        {
+          "status": "ok",
+          "wall_ms": 2729.602999985218,
+          "peak_mb": 252.48828125,
+          "allocated_bytes": 30761536,
+          "bdd_nodes": 16,
+          "bytes": 1325,
+          "cpu_ms": 46,
+          "export_ms": 46.69749999999976,
+          "gc_ms": 15,
+          "json_ms": 0.9913000000001375,
+          "outcomes": null,
+          "total_ms": 47.6887999999999
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 2801.5777999535203,
+        "peak_mb": 251.234375,
+        "allocated_bytes": 30761536,
+        "bdd_nodes": 16,
+        "bytes": 1325,
+        "cpu_ms": 31,
+        "export_ms": 46.69749999999976,
+        "gc_ms": 15,
+        "json_ms": 0.8393999999998414,
+        "outcomes": null,
+        "total_ms": 47.6887999999999
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2402.157200034708,
+        "peak_mb": 496.22265625,
+        "build_ms": 0.7439996115863323,
+        "compile_ms": 4.128300119191408,
+        "marginal_batch_ms": 13.378600124269724,
+        "pc_layers": 38,
+        "pc_variables": 9,
+        "pc_bytes": 54599,
+        "moments": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "total": 1.0,
+        "joint": null
+      }
+    },
+    {
+      "name": "repeated_8",
+      "family": "repeated",
+      "k": 8,
+      "primitives": 1,
+      "expected": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "joint": null,
+      "mode": "tuple",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 2991.2112997844815,
+          "peak_mb": 253.24609375,
+          "allocated_bytes": 31187824,
+          "bdd_nodes": null,
+          "bytes": 194,
+          "cpu_ms": 31,
+          "export_ms": 35.747899999999845,
+          "gc_ms": 15,
+          "json_ms": 0.4519999999997708,
+          "outcomes": 2,
+          "total_ms": 36.199899999999616
+        },
+        {
+          "status": "ok",
+          "wall_ms": 2883.5688000544906,
+          "peak_mb": 251.125,
+          "allocated_bytes": 31182784,
+          "bdd_nodes": null,
+          "bytes": 194,
+          "cpu_ms": 31,
+          "export_ms": 33.899499999999534,
+          "gc_ms": 0,
+          "json_ms": 0.8505000000004657,
+          "outcomes": 2,
+          "total_ms": 34.75
+        },
+        {
+          "status": "ok",
+          "wall_ms": 2914.4721999764442,
+          "peak_mb": 253.30078125,
+          "allocated_bytes": 31180064,
+          "bdd_nodes": null,
+          "bytes": 194,
+          "cpu_ms": 15,
+          "export_ms": 34.70859999999993,
+          "gc_ms": 0,
+          "json_ms": 0.7375000000001819,
+          "outcomes": 2,
+          "total_ms": 35.446100000000115
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 2914.4721999764442,
+        "peak_mb": 253.24609375,
+        "allocated_bytes": 31182784,
+        "bdd_nodes": null,
+        "bytes": 194,
+        "cpu_ms": 31,
+        "export_ms": 34.70859999999993,
+        "gc_ms": 0,
+        "json_ms": 0.7375000000001819,
+        "outcomes": 2,
+        "total_ms": 35.446100000000115
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2310.247899964452,
+        "peak_mb": 496.2890625,
+        "build_ms": 0.42610010132193565,
+        "compile_ms": 3.117899876087904,
+        "marginal_batch_ms": 9.713799692690372,
+        "pc_layers": 19,
+        "pc_variables": 8,
+        "pc_bytes": 42187,
+        "moments": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "total": 1.0,
+        "joint": null
+      }
+    },
+    {
+      "name": "repeated_12",
+      "family": "repeated",
+      "k": 12,
+      "primitives": 1,
+      "expected": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "joint": null,
+      "mode": "symbolic",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 3018.433999735862,
+          "peak_mb": 252.41796875,
+          "allocated_bytes": 31426128,
+          "bdd_nodes": 24,
+          "bytes": 1952,
+          "cpu_ms": 46,
+          "export_ms": 55.55090000000018,
+          "gc_ms": 15,
+          "json_ms": 0.6331999999997606,
+          "outcomes": null,
+          "total_ms": 56.184099999999944
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 3018.433999735862,
+        "peak_mb": 252.41796875,
+        "allocated_bytes": 31426128,
+        "bdd_nodes": 24,
+        "bytes": 1952,
+        "cpu_ms": 46,
+        "export_ms": 55.55090000000018,
+        "gc_ms": 15,
+        "json_ms": 0.6331999999997606,
+        "outcomes": null,
+        "total_ms": 56.184099999999944
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2408.963500056416,
+        "peak_mb": 497.24609375,
+        "build_ms": 0.8332999423146248,
+        "compile_ms": 5.395399872213602,
+        "marginal_batch_ms": 19.500100053846836,
+        "pc_layers": 54,
+        "pc_variables": 13,
+        "pc_bytes": 75321,
+        "moments": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "total": 1.0,
+        "joint": null
+      }
+    },
+    {
+      "name": "repeated_12",
+      "family": "repeated",
+      "k": 12,
+      "primitives": 1,
+      "expected": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "joint": null,
+      "mode": "tuple",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 3012.6621001400054,
+          "peak_mb": 252.453125,
+          "allocated_bytes": 37358256,
+          "bdd_nodes": null,
+          "bytes": 248,
+          "cpu_ms": 46,
+          "export_ms": 50.6559000000002,
+          "gc_ms": 15,
+          "json_ms": 0.6263000000003558,
+          "outcomes": 2,
+          "total_ms": 51.28220000000056
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 3012.6621001400054,
+        "peak_mb": 252.453125,
+        "allocated_bytes": 37358256,
+        "bdd_nodes": null,
+        "bytes": 248,
+        "cpu_ms": 46,
+        "export_ms": 50.6559000000002,
+        "gc_ms": 15,
+        "json_ms": 0.6263000000003558,
+        "outcomes": 2,
+        "total_ms": 51.28220000000056
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2356.3187001273036,
+        "peak_mb": 497.41015625,
+        "build_ms": 0.5672001279890537,
+        "compile_ms": 4.220100119709969,
+        "marginal_batch_ms": 14.236100018024445,
+        "pc_layers": 27,
+        "pc_variables": 12,
+        "pc_bytes": 60204,
+        "moments": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "total": 1.0,
+        "joint": null
+      }
+    },
+    {
+      "name": "repeated_16",
+      "family": "repeated",
+      "k": 16,
+      "primitives": 1,
+      "expected": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "joint": null,
+      "mode": "symbolic",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 2994.262299966067,
+          "peak_mb": 250.53125,
+          "allocated_bytes": 32082992,
+          "bdd_nodes": 32,
+          "bytes": 2584,
+          "cpu_ms": 46,
+          "export_ms": 52.88999999999987,
+          "gc_ms": 15,
+          "json_ms": 0.6575000000002547,
+          "outcomes": null,
+          "total_ms": 53.54750000000013
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 2994.262299966067,
+        "peak_mb": 250.53125,
+        "allocated_bytes": 32082992,
+        "bdd_nodes": 32,
+        "bytes": 2584,
+        "cpu_ms": 46,
+        "export_ms": 52.88999999999987,
+        "gc_ms": 15,
+        "json_ms": 0.6575000000002547,
+        "outcomes": null,
+        "total_ms": 53.54750000000013
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2403.057200368494,
+        "peak_mb": 497.1796875,
+        "build_ms": 0.9633996523916721,
+        "compile_ms": 6.5413000993430614,
+        "marginal_batch_ms": 22.70809980109334,
+        "pc_layers": 70,
+        "pc_variables": 17,
+        "pc_bytes": 96049,
+        "moments": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "total": 1.0,
+        "joint": null
+      }
+    },
+    {
+      "name": "repeated_16",
+      "family": "repeated",
+      "k": 16,
+      "primitives": 1,
+      "expected": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "joint": null,
+      "mode": "tuple",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 3296.5066004544497,
+          "peak_mb": 251.30078125,
+          "allocated_bytes": 144936032,
+          "bdd_nodes": null,
+          "bytes": 304,
+          "cpu_ms": 281,
+          "export_ms": 309.69759999999997,
+          "gc_ms": 62,
+          "json_ms": 0.7152999999998428,
+          "outcomes": 2,
+          "total_ms": 310.4128999999998
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 3296.5066004544497,
+        "peak_mb": 251.30078125,
+        "allocated_bytes": 144936032,
+        "bdd_nodes": null,
+        "bytes": 304,
+        "cpu_ms": 281,
+        "export_ms": 309.69759999999997,
+        "gc_ms": 62,
+        "json_ms": 0.7152999999998428,
+        "outcomes": 2,
+        "total_ms": 310.4128999999998
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2404.170200228691,
+        "peak_mb": 496.4921875,
+        "build_ms": 0.5811001174151897,
+        "compile_ms": 5.74169959872961,
+        "marginal_batch_ms": 18.752200063318014,
+        "pc_layers": 35,
+        "pc_variables": 16,
+        "pc_bytes": 78100,
+        "moments": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "total": 1.0,
+        "joint": null
+      }
+    },
+    {
+      "name": "repeated_20",
+      "family": "repeated",
+      "k": 20,
+      "primitives": 1,
+      "expected": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "joint": null,
+      "mode": "symbolic",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 3044.7182999923825,
+          "peak_mb": 254.44921875,
+          "allocated_bytes": 32639008,
+          "bdd_nodes": 40,
+          "bytes": 3216,
+          "cpu_ms": 31,
+          "export_ms": 51.57029999999986,
+          "gc_ms": 0,
+          "json_ms": 10.21289999999999,
+          "outcomes": null,
+          "total_ms": 61.78319999999985
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 3044.7182999923825,
+        "peak_mb": 254.44921875,
+        "allocated_bytes": 32639008,
+        "bdd_nodes": 40,
+        "bytes": 3216,
+        "cpu_ms": 31,
+        "export_ms": 51.57029999999986,
+        "gc_ms": 0,
+        "json_ms": 10.21289999999999,
+        "outcomes": null,
+        "total_ms": 61.78319999999985
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2474.90039980039,
+        "peak_mb": 497.7265625,
+        "build_ms": 1.2483000755310059,
+        "compile_ms": 7.54689984023571,
+        "marginal_batch_ms": 28.83269963786006,
+        "pc_layers": 86,
+        "pc_variables": 21,
+        "pc_bytes": 116793,
+        "moments": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "total": 1.0,
+        "joint": null
+      }
+    },
+    {
+      "name": "repeated_20",
+      "family": "repeated",
+      "k": 20,
+      "primitives": 1,
+      "expected": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "joint": null,
+      "mode": "tuple",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 11217.538100201637,
+          "peak_mb": 443.96875,
+          "allocated_bytes": 2138352704,
+          "bdd_nodes": null,
+          "bytes": 360,
+          "cpu_ms": 8093,
+          "export_ms": 8236.334200000001,
+          "gc_ms": 1765,
+          "json_ms": 0.8184000000001106,
+          "outcomes": 2,
+          "total_ms": 8237.152600000001
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 11217.538100201637,
+        "peak_mb": 443.96875,
+        "allocated_bytes": 2138352704,
+        "bdd_nodes": null,
+        "bytes": 360,
+        "cpu_ms": 8093,
+        "export_ms": 8236.334200000001,
+        "gc_ms": 1765,
+        "json_ms": 0.8184000000001106,
+        "outcomes": 2,
+        "total_ms": 8237.152600000001
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2765.212500002235,
+        "peak_mb": 497.26171875,
+        "build_ms": 0.6858999840915203,
+        "compile_ms": 6.3506001606583595,
+        "marginal_batch_ms": 22.54740009084344,
+        "pc_layers": 43,
+        "pc_variables": 20,
+        "pc_bytes": 96019,
+        "moments": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "total": 1.0,
+        "joint": null
+      }
+    },
+    {
+      "name": "repeated_40",
+      "family": "repeated",
+      "k": 40,
+      "primitives": 1,
+      "expected": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "joint": null,
+      "mode": "symbolic",
+      "export_trials": [
+        {
+          "status": "ok",
+          "wall_ms": 3916.0739998333156,
+          "peak_mb": 254.95703125,
+          "allocated_bytes": 35842160,
+          "bdd_nodes": 80,
+          "bytes": 6376,
+          "cpu_ms": 78,
+          "export_ms": 114.52529999999979,
+          "gc_ms": 15,
+          "json_ms": 1.5688000000000102,
+          "outcomes": null,
+          "total_ms": 116.0940999999998
+        }
+      ],
+      "export": {
+        "status": "ok",
+        "wall_ms": 3916.0739998333156,
+        "peak_mb": 254.95703125,
+        "allocated_bytes": 35842160,
+        "bdd_nodes": 80,
+        "bytes": 6376,
+        "cpu_ms": 78,
+        "export_ms": 114.52529999999979,
+        "gc_ms": 15,
+        "json_ms": 1.5688000000000102,
+        "outcomes": null,
+        "total_ms": 116.0940999999998
+      },
+      "pc": {
+        "status": "ok",
+        "wall_ms": 2734.013899695128,
+        "peak_mb": 499.67578125,
+        "build_ms": 2.382200211286545,
+        "compile_ms": 51.553699653595686,
+        "marginal_batch_ms": 54.69570029526949,
+        "pc_layers": 166,
+        "pc_variables": 41,
+        "pc_bytes": 220641,
+        "moments": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "total": 1.0,
+        "joint": null
+      }
+    },
+    {
+      "name": "repeated_40",
+      "family": "repeated",
+      "k": 40,
+      "primitives": 1,
+      "expected": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "joint": null,
+      "mode": "tuple",
+      "export_trials": [
+        {
+          "status": "timeout",
+          "wall_ms": 20040.50219990313,
+          "peak_mb": 565.9765625
+        }
+      ],
+      "export": {
+        "status": "timeout",
+        "wall_ms": 20040.50219990313,
+        "peak_mb": 565.9765625
+      },
+      "pc": {
+        "status": "skipped_after_limit"
+      }
+    }
+  ],
+  "supplementary": [
+    {
+      "started_utc": "2026-11-12T22:43:51.960154+00:00",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+      "cpu_count": 32,
+      "timeout_seconds": 90.0,
+      "memory_limit_mb": 1024,
+      "artifacts": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\roulette-comparison-xu15dq2j",
+      "commits": {
+        "symbolic": "c432cc0b733d85b424049bee5a6e0bbf8ff53d02",
+        "tuple": "a89616e04404ff08a405f8433ce07cfedcc8b53e"
+      },
+      "results": [
+        {
+          "name": "independent_12",
+          "family": "independent",
+          "k": 12,
+          "primitives": 12,
+          "expected": [
+            0.2,
+            0.35,
+            0.06999999999999999,
+            1.1774546875000001e-05
+          ],
+          "joint": null,
+          "mode": "symbolic",
+          "export_trials": [
+            {
+              "status": "ok",
+              "wall_ms": 3083.557799924165,
+              "peak_mb": 266.171875,
+              "allocated_bytes": 99907216,
+              "bdd_nodes": 12284,
+              "bytes": 994780,
+              "cpu_ms": 125,
+              "export_ms": 117.93159999999989,
+              "gc_ms": 0,
+              "json_ms": 37.32619999999997,
+              "outcomes": null,
+              "total_ms": 155.25779999999986
+            }
+          ],
+          "export": {
+            "status": "ok",
+            "wall_ms": 3083.557799924165,
+            "peak_mb": 266.171875,
+            "allocated_bytes": 99907216,
+            "bdd_nodes": 12284,
+            "bytes": 994780,
+            "cpu_ms": 125,
+            "export_ms": 117.93159999999989,
+            "gc_ms": 0,
+            "json_ms": 37.32619999999997,
+            "outcomes": null,
+            "total_ms": 155.25779999999986
+          },
+          "pc": {
+            "status": "ok",
+            "wall_ms": 22338.351599872112,
+            "peak_mb": 731.21875,
+            "build_ms": 290.8590999431908,
+            "compile_ms": 1687.134400010109,
+            "marginal_batch_ms": 2337.3504001647234,
+            "pc_layers": 20524,
+            "pc_variables": 24,
+            "pc_bytes": 14246213,
+            "moments": [
+              0.19999999999999998,
+              0.35,
+              0.06999999999999998,
+              1.1774546874999988e-05
+            ],
+            "total": 1.0,
+            "joint": null
+          }
+        },
+        {
+          "name": "independent_12",
+          "family": "independent",
+          "k": 12,
+          "primitives": 12,
+          "expected": [
+            0.2,
+            0.35,
+            0.06999999999999999,
+            1.1774546875000001e-05
+          ],
+          "joint": null,
+          "mode": "tuple",
+          "export_trials": [
+            {
+              "status": "ok",
+              "wall_ms": 3301.649599801749,
+              "peak_mb": 251.41015625,
+              "allocated_bytes": 115030080,
+              "bdd_nodes": null,
+              "bytes": 470420,
+              "cpu_ms": 171,
+              "export_ms": 172.73129999999992,
+              "gc_ms": 46,
+              "json_ms": 20.047900000000027,
+              "outcomes": 4096,
+              "total_ms": 192.77919999999995
+            }
+          ],
+          "export": {
+            "status": "ok",
+            "wall_ms": 3301.649599801749,
+            "peak_mb": 251.41015625,
+            "allocated_bytes": 115030080,
+            "bdd_nodes": null,
+            "bytes": 470420,
+            "cpu_ms": 171,
+            "export_ms": 172.73129999999992,
+            "gc_ms": 46,
+            "json_ms": 20.047900000000027,
+            "outcomes": 4096,
+            "total_ms": 192.77919999999995
+          },
+          "pc": {
+            "status": "ok",
+            "wall_ms": 4287.047400139272,
+            "peak_mb": 531.1796875,
+            "build_ms": 73.15259985625744,
+            "compile_ms": 311.07169995084405,
+            "marginal_batch_ms": 209.76649969816208,
+            "pc_layers": 4121,
+            "pc_variables": 12,
+            "pc_bytes": 2104223,
+            "moments": [
+              0.19999999999999618,
+              0.3499999999999936,
+              0.06999999999999876,
+              1.1774546874999783e-05
+            ],
+            "total": 0.9999999999999806,
+            "joint": null
+          }
+        }
+      ]
+    },
+    {
+      "started_utc": "2026-11-12T22:44:25.215422+00:00",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.2 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 18:49:14) [MSC v.1929 64 bit (AMD64)]",
+      "cpu_count": 32,
+      "timeout_seconds": 90.0,
+      "memory_limit_mb": 1024,
+      "artifacts": "C:\\Users\\Lenovo\\AppData\\Local\\Temp\\roulette-comparison-lraf0kqn",
+      "commits": {
+        "symbolic": "c432cc0b733d85b424049bee5a6e0bbf8ff53d02",
+        "tuple": "a89616e04404ff08a405f8433ce07cfedcc8b53e"
+      },
+      "results": [
+        {
+          "name": "shared_20",
+          "family": "shared",
+          "k": 20,
+          "primitives": 4,
+          "expected": [
+            0.2,
+            0.3499999999999999,
+            0.06999999999999999,
+            0.0
+          ],
+          "joint": null,
+          "mode": "symbolic",
+          "export_trials": [
+            {
+              "status": "ok",
+              "wall_ms": 2989.395599812269,
+              "peak_mb": 255.11328125,
+              "allocated_bytes": 39092576,
+              "bdd_nodes": 300,
+              "bytes": 21687,
+              "cpu_ms": 46,
+              "export_ms": 55.15319999999974,
+              "gc_ms": 15,
+              "json_ms": 1.2871000000000095,
+              "outcomes": null,
+              "total_ms": 56.44029999999975
+            }
+          ],
+          "export": {
+            "status": "ok",
+            "wall_ms": 2989.395599812269,
+            "peak_mb": 255.11328125,
+            "allocated_bytes": 39092576,
+            "bdd_nodes": 300,
+            "bytes": 21687,
+            "cpu_ms": 46,
+            "export_ms": 55.15319999999974,
+            "gc_ms": 15,
+            "json_ms": 1.2871000000000095,
+            "outcomes": null,
+            "total_ms": 56.44029999999975
+          },
+          "pc": {
+            "status": "ok",
+            "wall_ms": 2504.7460002824664,
+            "peak_mb": 499.734375,
+            "build_ms": 4.448499996215105,
+            "compile_ms": 49.41640002653003,
+            "marginal_batch_ms": 45.67319992929697,
+            "pc_layers": 380,
+            "pc_variables": 24,
+            "pc_bytes": 253635,
+            "moments": [
+              0.19999999999999998,
+              0.35,
+              0.06999999999999998,
+              0.0
+            ],
+            "total": 1.0,
+            "joint": null
+          }
+        },
+        {
+          "name": "shared_20",
+          "family": "shared",
+          "k": 20,
+          "primitives": 4,
+          "expected": [
+            0.2,
+            0.3499999999999999,
+            0.06999999999999999,
+            0.0
+          ],
+          "joint": null,
+          "mode": "tuple",
+          "export_trials": [
+            {
+              "status": "memory_limit",
+              "wall_ms": 34596.55690006912,
+              "peak_mb": 1096.54296875
+            }
+          ],
+          "export": {
+            "status": "memory_limit",
+            "wall_ms": 34596.55690006912,
+            "peak_mb": 1096.54296875
+          },
+          "pc": {
+            "status": "skipped_after_limit"
+          }
+        }
+      ]
+    }
+  ]
+}
