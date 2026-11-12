@@ -15,6 +15,7 @@
  observe!
  region?
  make-categorical
+ export-queries
 
  ;; debug
  clear-cache!
@@ -174,6 +175,15 @@
 
 (define (allocated-vars regs)
   (apply set-union (set) (map region-vals regs)))
+
+(define (export-queries body)
+  ;; Run a model in a fresh evidence/region context, without ordinary inference.
+  (parameterize ([current-regions (list (make-region))]
+                 [current-evidence (evidence #t #t)])
+    (define queries (body))
+    (check-query-flips! queries)
+    (match-define (evidence obs samp) (current-evidence))
+    (export-query-bdd queries (&& obs samp))))
 
 (define (query-val val vars)
   (define unnormalized (infer val #:keep vars #:engine engine))

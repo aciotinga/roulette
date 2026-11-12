@@ -6,6 +6,7 @@
 (require (except-in racket/contract ->)
          (rename-in racket/contract [-> base->]))
 (provide
+ export-query-bdd
  (contract-out
   [rename make-rsdd-engine
           rsdd-engine
@@ -51,6 +52,8 @@
          racket/set
          racket/match
          racket/lazy-require
+         (only-in racket/list make-list)
+         json
          rosette/base/core/bool
          rosette/base/core/term
          data/gvector
@@ -185,6 +188,44 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; engine
+
+(define (export-query-bdd queries [evidence #t])
+  ;; Export a joint constraint, without enumerating tuples of query outcomes.
+  (unless (and (pair? queries) (list? queries) (andmap @boolean? queries))
+    (raise-argument-error 'export-query-bdd "nonempty list of Boolean expressions" queries))
+  (unless (@boolean? evidence)
+    (raise-argument-error 'export-query-bdd "Boolean evidence" evidence))
+  (define builder (mk-bdd-manager-default-order 0))
+  (dynamic-wind
+    void
+    (lambda ()
+      (define labels (make-hasheq))
+      (define weights
+        (for/list ([(var measure pc) (in-measures)])
+          (define density (measure-density measure))
+          (define f (density #f))
+          (define t (density #t))
+          (unless (and (eq? (measure-codomain measure) number-semiring)
+                       (rational? f) (rational? t) (<= 0 f) (<= 0 t) (= (+ f t) 1))
+            (error 'export-query-bdd "export requires normalized numeric probability weights"))
+          (hash-set! labels var (rsdd-label builder))
+          (list (exact->inexact f) (exact->inexact t))))
+      (define query-labels (for/list ([query (in-list queries)]) (rsdd-label builder)))
+      (define enc (make-enc builder (lambda (var) (hash-ref labels var))))
+      (define root
+        (for/fold ([root (enc (&& (vc-assumes (vc)) evidence))])
+                  ([query (in-list queries)] [label (in-list query-labels)])
+          (define guard (enc (hash-ref (flatten-symbolic query) #t #f)))
+          (define equivalence
+            (rsdd-ite builder (rsdd-var builder label) guard (rsdd-not builder guard)))
+          (rsdd-and builder root equivalence)))
+      (hasheq 'bdd (string->jsexpr (rsdd-to-json root))
+              'weights (for/hasheq ([pair (in-list (append weights
+                                                         (make-list (length queries) '(1.0 1.0))))]
+                                   [label (in-naturals)])
+                         (values (string->symbol (format "v~a" label)) pair))
+              'queries query-labels))
+    (lambda () (free-bdd-manager builder))))
 
 (define (make-rsdd-engine #:semiring [semi number-semiring])
   (new rsdd-engine% [semi semi]))
